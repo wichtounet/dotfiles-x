@@ -41,10 +41,13 @@ URxvt.color15:    #fdf6e3
 
 ! Configure scrollbar
 
-URxvt*scrollBar:        true
-URxvt*scrollBar_right:  true
-URxvt*scrollstyle:      plain
-URxvt*saveLines:        8192
+URxvt*scrollBar:         true
+URxvt*scrollBar_right:   true
+URxvt*scrollstyle:       plain
+URxvt*scrollTtyOutput:   false
+URxvt*scrollWithBuffer:  true
+URxvt*scrollTtyKeypress: true
+URxvt*saveLines:         65536
 
 ! Other options
 
@@ -52,7 +55,7 @@ URxvt*buffered:         true
 
 ! Extensions
 
-URxvt.perl-ext-common:      default,clipboard,matcher
+URxvt.perl-ext-common:      default,clipboard,matcher,searchable-scrollback
 
 ! URL Matcher
 
